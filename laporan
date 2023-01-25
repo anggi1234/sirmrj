@@ -1,0 +1,59 @@
+<table class="table table-striped table-sm ew-view-table">
+</table>
+	<div class="box-body">
+		  <div class="row">
+
+		  <div class="col-md-8">
+		  	<div class="alert bg-teal alert-dismissible">
+			  <div class="box-body">
+			  
+			  <div class="form-group">
+				<label>Anamnesa</label>
+					<textarea class="form-control" name="anamnesa" id="anamnesa" rows="3" placeholder="Anamnesa" required></textarea>
+			  </div>
+			  
+
+			  <br>
+			  <div class="form-group">
+			  <label>Tekanan Darah</label>
+				<input type="text" name="tekanan_darah" id="tekanan_darah" class="form-control" placeholder="Tekanan Darah">
+			  </div>
+
+			  <br>		  
+			  
+			  <input type="hidden" name="id_bill_detail_tarif" id="id_bill_detail_tarif" class="form-control" value="<?php echo $_GET['id_bill_detail_tarif'] ?>">
+			  <input type="hidden" name="idxdaftar" id="idxdaftar" class="form-control" value="<?php echo $DATA_IDENTITAS['idxdaftar']; ?>">
+			  <input type="hidden" name="id_pasienbaru" id="id_pasienbaru" class="form-control" value="<?php echo $DATA_IDENTITAS['id_pasienbaru']; ?>">
+			  <input type="hidden" name="userlevelid" id="userlevelid" class="form-control" value="<?php echo $DATA_IDENTITAS['userlevelid']; ?>">
+			  <input type="hidden" name="kdcarabayar" id="kdcarabayar" class="form-control" value="<?php echo $DATA_IDENTITAS['kdcarabayar']; ?>">
+			  <input type="hidden" name="kelas" id="idxdaftar" class="form-control" value="<?php echo $DATA_IDENTITAS['kelas']; ?>">
+			  
+				<br>	
+			  <label>Berat Badan</label>
+			   <div class="input-group input-group-sm">
+				<input type="text" name="berat_badan" id="berat_badan" class="form-control" placeholder="Berat Badan">
+					<span class="input-group-btn">
+					  <button type="button" class="btn btn-default btn-flat">KG</button>
+					</span>
+			  </div>
+			   <br>
+			  <label>Tinggi Badan</label>
+			   <div class="input-group input-group-sm">
+				<input type="text" name="tinggi_badan" id="tinggi_badan" class="form-control" placeholder="Tinggi Badan">
+					<span class="input-group-btn">
+					  <button type="button" class="btn btn-default btn-flat">CM</button>
+					</span>
+			  </div>
+			  <br>	
+			  <label>Suhu Badan</label>
+			   <div class="input-group input-group-sm">
+				<input type="text" name="suhu_badan" id="suhu_badan" class="form-control" placeholder="Suhu Badan">
+					<span class="input-group-btn">
+					  <button type="button" class="btn btn-default btn-flat">Derajat Celcius</button>
+					</span>
+			  </div>
+
+			  
+			  </div>
+			 </div>
+			</div>
